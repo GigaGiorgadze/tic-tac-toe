@@ -1,0 +1,93 @@
+.gameboard{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 6px;
+}
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 10px;
+
+}
+body{
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    max-width: 60rem;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+header{
+    margin-top: 10%;
+    text-align: center;
+
+
+}
+.title{
+
+    font-size: 4.8rem;
+
+}
+.subtext{
+
+    font-size: 1.6rem;
+    color: rgb(56, 57, 63);
+}
+.subtext span{
+    font-weight: 900;
+}
+
+.squares{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 1rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    border-radius: 6px;
+}
+
+.square{
+    position: relative;
+    background-color: rgb(162, 206, 221);
+    border-radius: 4px;
+}
+.square:hover{
+    cursor: pointer;
+    background-color: rgb(142, 191, 208);
+}
+.X{
+    background-image:  url(./images//image\ \(3\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(162, 206, 221);
+    background-size: contain;
+}
+
+.O{
+    background-image: url(./images/image\ \(2\).png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(162, 206, 221);
+    background-size: contain;
+}
+button{
+    display: none;
+    width: 40%;
+    height: 5%;
+    background-color: blue;
+    color: orange;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
