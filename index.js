@@ -113,6 +113,11 @@ const game = (() => {
     // declare tie
     function declareTie() {
         subtext.innerHTML = "<b>Tie game!</b>";
+        let Btn = document.querySelector('button')
+                Btn.style.display = 'inline'
+                Btn.addEventListener('click', () => {
+                    window.location.reload()
+                })
     }
 
     // return
